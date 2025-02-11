@@ -1,566 +1,668 @@
 <!doctype html>
 <html lang="en" class="layout-default">
-  <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
 
-<title>Practicalities | RubyConf TH 2023</title>
+  <title>Practicalities | RubyConf TH 2023</title>
 
-<meta name="description" content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
+  <meta name="description" content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
 
-<meta itemprop="name" content="Practicalities | RubyConf TH 2023" />
-<meta itemprop="description" content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
-<meta itemprop="image" content="/public/images/social/opengraph.png" />
+  <meta itemprop="name" content="Practicalities | RubyConf TH 2023" />
+  <meta itemprop="description" content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
+  <meta itemprop="image" content="../images/social/opengraph.png" />
 
-<meta property="og:title" content="Practicalities | RubyConf TH 2023" />
-<meta property="og:description" content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="/images/social/opengraph.png" />
+  <meta property="og:title" content="Practicalities | RubyConf TH 2023" />
+  <meta property="og:description"
+    content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="../images/social/opengraph.png" />
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="" />
-<meta name="twitter:title" content="Practicalities | RubyConf TH 2023" />
-<meta name="twitter:description" content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
-<meta name="twitter:image" content="/images/social/twitter.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:title" content="Practicalities | RubyConf TH 2023" />
+  <meta name="twitter:description"
+    content="A community-powered Ruby conference on 6-7 October 2023 in Bangkok, Thailand" />
+  <meta name="twitter:image" content="../images/social/twitter.png" />
 
-<meta name="apple-mobile-web-app-title" content=""/>
-<meta name="mobile-web-app-capable" content="yes"/>
-<meta name="apple-touch-fullscreen" content="yes"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="#f81c49"/>
+  <meta name="apple-mobile-web-app-title" content="" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#f81c49" />
 
-<meta name="theme-color" content="#f81c49"/>
+  <meta name="theme-color" content="#f81c49" />
 
-<meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)">
-<meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)">
-<meta http-equiv="cleartype" content="on">
+  <meta http-equiv="Page-Enter" content="RevealTrans(Duration=2.0,Transition=2)">
+  <meta http-equiv="Page-Exit" content="RevealTrans(Duration=3.0,Transition=12)">
+  <meta http-equiv="cleartype" content="on">
 
-<meta name="msapplication-TileColor" content="#fff" />
-<meta name="msapplication-TileImage" content="/images/favicon/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="/images/favicon/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="/images/favicon/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="/images/favicon/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="/images/favicon/mstile-310x310.png" />
+  <meta name="msapplication-TileColor" content="#fff" />
+  <meta name="msapplication-TileImage" content="../images/favicon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="../images/favicon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="../images/favicon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="../images/favicon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="../images/favicon/mstile-310x310.png" />
 
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicon/apple-icon-144x144.png"/>
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicon/apple-icon-152x152.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../images/favicon/apple-icon-152x152.png" />
 
-<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png"/>
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"/>
-<link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
 
-<link rel="manifest" href="/manifest.json"/>
+  <link rel="manifest" href="../manifest.json" />
 
 
-    <link rel="stylesheet" href="MISSING_ESBUILD_MANIFEST_FILE" type="text/css"/>
-    <script src="MISSING_ESBUILD_MANIFEST_FILE" defer></script>
+  <link rel="stylesheet" href="../static/application.css" type="text/css" />
+  <script src="../static/application.js" defer></script>
 
-    
 
-    <script type="module">let lastmod = 0
-function startReloadConnection() {
-  const evtSource = new EventSource("/_bridgetown/live_reload")
-  evtSource.onmessage = event => {
-    if (event.data == "reloaded!") {
-      location.reload()
-    } else {
-      const newmod = Number(event.data)
-      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
-        location.reload()
-      } else {
-        lastmod = newmod
-      }
-    }
-  }
-  evtSource.onerror = event => {
-    if (evtSource.readyState === 2) {
-      // reconnect with new object
-      evtSource.close()
-      console.warn("Live reload: attempting to reconnect in 3 seconds...")
 
-      setTimeout(() => startReloadConnection(), 3000)
-    }
-  }
-}
-setTimeout(() => {
-  startReloadConnection()
-}, 500)
-</script>
-  </head>
-  <body class="practicalities">
-    <div hidden>
-      <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
-    <symbol fill="none" viewBox="0 0 32 32" id="icon-arrow-right-circle" xmlns="http://www.w3.org/2000/svg">
+</head>
+
+<body class="practicalities">
+  <div hidden>
+    <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol fill="none" viewBox="0 0 32 32" id="icon-arrow-right-circle" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M2 16a14 14 0 1 0 28 0 14 14 0 0 0-28 0Zm30 0a16 16 0 1 1-32 0 16 16 0 0 1 32 0ZM9 15a1 1 0 0 0 0 2h11.586l-4.294 4.292a1.001 1.001 0 0 0 1.416 1.416l6-6a1 1 0 0 0 0-1.416l-6-6a1.002 1.002 0 0 0-1.416 1.416L20.586 15H9Z"
-            fill="currentColor" />
-    </symbol>
-    <symbol viewBox="0 0 32 32" id="icon-facebook" xmlns="http://www.w3.org/2000/svg">
+          d="M2 16a14 14 0 1 0 28 0 14 14 0 0 0-28 0Zm30 0a16 16 0 1 1-32 0 16 16 0 0 1 32 0ZM9 15a1 1 0 0 0 0 2h11.586l-4.294 4.292a1.001 1.001 0 0 0 1.416 1.416l6-6a1 1 0 0 0 0-1.416l-6-6a1.002 1.002 0 0 0-1.416 1.416L20.586 15H9Z"
+          fill="currentColor" />
+      </symbol>
+      <symbol viewBox="0 0 32 32" id="icon-facebook" xmlns="http://www.w3.org/2000/svg">
         <path
-            d="M0 16C0 7.163 7.163 0 16 0s16 7.163 16 16-7.163 16-16 16S0 24.837 0 16Zm17.668 9.408v-8.705h2.403l.318-3h-2.721l.004-1.501c0-.783.074-1.202 1.198-1.202h1.502V8h-2.403c-2.887 0-3.903 1.455-3.903 3.902v1.801h-1.8v3h1.8v8.705h3.602Z"
-            fill="currentColor" />
-    </symbol>
-    <symbol viewBox="0 0 33 33" id="icon-instagram" xmlns="http://www.w3.org/2000/svg">
+          d="M0 16C0 7.163 7.163 0 16 0s16 7.163 16 16-7.163 16-16 16S0 24.837 0 16Zm17.668 9.408v-8.705h2.403l.318-3h-2.721l.004-1.501c0-.783.074-1.202 1.198-1.202h1.502V8h-2.403c-2.887 0-3.903 1.455-3.903 3.902v1.801h-1.8v3h1.8v8.705h3.602Z"
+          fill="currentColor" />
+      </symbol>
+      <symbol viewBox="0 0 33 33" id="icon-instagram" xmlns="http://www.w3.org/2000/svg">
         <path fill="currentColor" fill-rule="evenodd"
-            d="M16.5 33C7.387 33 0 25.613 0 16.5S7.387 0 16.5 0 33 7.387 33 16.5 25.613 33 16.5 33Zm-.003-24.745c-2.24 0-2.52.01-3.4.05-.878.04-1.477.18-2.002.383a4.043 4.043 0 0 0-1.46.951c-.46.459-.741.919-.952 1.461-.204.525-.343 1.124-.383 2.002-.04.88-.05 1.16-.05 3.4s.01 2.521.05 3.401c.04.878.18 1.477.383 2.002.21.542.493 1.002.951 1.46.459.46.919.741 1.461.952.525.204 1.124.343 2.002.383.88.04 1.16.05 3.4.05s2.521-.01 3.4-.05 1.478-.18 2.003-.383a4.043 4.043 0 0 0 1.46-.951c.46-.459.741-.919.952-1.461.204-.525.343-1.124.383-2.002.04-.88.05-1.16.05-3.4s-.01-2.521-.05-3.4-.18-1.478-.383-2.003a4.043 4.043 0 0 0-.951-1.46 4.043 4.043 0 0 0-1.461-.952c-.525-.204-1.124-.343-2.002-.383-.88-.04-1.16-.05-3.4-.05Zm0 1.486c2.203 0 2.463.009 3.333.048.804.037 1.24.171 1.531.284.385.15.66.329.949.617.288.289.467.564.617.949.113.29.247.727.284 1.53.04.87.048 1.131.048 3.334 0 2.202-.009 2.463-.048 3.332-.037.804-.171 1.241-.284 1.532-.15.385-.329.66-.617.948a2.555 2.555 0 0 1-.949.617c-.29.113-.727.247-1.53.284-.87.04-1.131.048-3.334.048-2.202 0-2.463-.008-3.332-.048-.804-.037-1.241-.171-1.532-.284a2.555 2.555 0 0 1-.948-.617 2.555 2.555 0 0 1-.617-.948c-.113-.29-.247-.728-.284-1.532-.04-.87-.048-1.13-.048-3.332 0-2.203.008-2.463.048-3.333.037-.804.171-1.24.284-1.531.15-.385.328-.66.617-.949.289-.288.563-.467.948-.617.29-.113.728-.247 1.532-.284.87-.04 1.13-.048 3.332-.048Zm-.134 9.663a2.767 2.767 0 1 1 0-5.533 2.767 2.767 0 0 1 0 5.533Zm0-7.029a4.262 4.262 0 1 0 0 8.525 4.262 4.262 0 0 0 0-8.525Zm5.362-.137a.963.963 0 1 0-1.925 0 .963.963 0 0 0 1.925 0Z" />
-    </symbol>
-    <symbol viewBox="0 0 550 385" id="icon-logo" xmlns="http://www.w3.org/2000/svg">
+          d="M16.5 33C7.387 33 0 25.613 0 16.5S7.387 0 16.5 0 33 7.387 33 16.5 25.613 33 16.5 33Zm-.003-24.745c-2.24 0-2.52.01-3.4.05-.878.04-1.477.18-2.002.383a4.043 4.043 0 0 0-1.46.951c-.46.459-.741.919-.952 1.461-.204.525-.343 1.124-.383 2.002-.04.88-.05 1.16-.05 3.4s.01 2.521.05 3.401c.04.878.18 1.477.383 2.002.21.542.493 1.002.951 1.46.459.46.919.741 1.461.952.525.204 1.124.343 2.002.383.88.04 1.16.05 3.4.05s2.521-.01 3.4-.05 1.478-.18 2.003-.383a4.043 4.043 0 0 0 1.46-.951c.46-.459.741-.919.952-1.461.204-.525.343-1.124.383-2.002.04-.88.05-1.16.05-3.4s-.01-2.521-.05-3.4-.18-1.478-.383-2.003a4.043 4.043 0 0 0-.951-1.46 4.043 4.043 0 0 0-1.461-.952c-.525-.204-1.124-.343-2.002-.383-.88-.04-1.16-.05-3.4-.05Zm0 1.486c2.203 0 2.463.009 3.333.048.804.037 1.24.171 1.531.284.385.15.66.329.949.617.288.289.467.564.617.949.113.29.247.727.284 1.53.04.87.048 1.131.048 3.334 0 2.202-.009 2.463-.048 3.332-.037.804-.171 1.241-.284 1.532-.15.385-.329.66-.617.948a2.555 2.555 0 0 1-.949.617c-.29.113-.727.247-1.53.284-.87.04-1.131.048-3.334.048-2.202 0-2.463-.008-3.332-.048-.804-.037-1.241-.171-1.532-.284a2.555 2.555 0 0 1-.948-.617 2.555 2.555 0 0 1-.617-.948c-.113-.29-.247-.728-.284-1.532-.04-.87-.048-1.13-.048-3.332 0-2.203.008-2.463.048-3.333.037-.804.171-1.24.284-1.531.15-.385.328-.66.617-.949.289-.288.563-.467.948-.617.29-.113.728-.247 1.532-.284.87-.04 1.13-.048 3.332-.048Zm-.134 9.663a2.767 2.767 0 1 1 0-5.533 2.767 2.767 0 0 1 0 5.533Zm0-7.029a4.262 4.262 0 1 0 0 8.525 4.262 4.262 0 0 0 0-8.525Zm5.362-.137a.963.963 0 1 0-1.925 0 .963.963 0 0 0 1.925 0Z" />
+      </symbol>
+      <symbol viewBox="0 0 550 385" id="icon-logo" xmlns="http://www.w3.org/2000/svg">
         <g fill="none" fill-rule="evenodd">
-            <path fill="#000006"
-                d="M113.674 26.012H90.159c-4.65 0-8.357.943-11.115 2.818-2.758 1.88-4.938 4.485-6.526 7.807-1.6 3.326-2.615 7.008-3.054 11.05-.43 4.05-.652 8.24-.652 12.578v76.304c0 9.83-1.453 18.14-4.351 24.93-2.91 6.796-6.395 12.358-10.458 16.695-4.068 4.333-8.205 7.585-12.412 9.752-4.212 2.167-7.618 3.543-10.237 4.116v.868c2.619.295 6.025 1.38 10.237 3.252 4.207 1.885 8.344 4.924 12.412 9.11 4.063 4.19 7.548 9.825 10.458 16.907 2.898 7.081 4.35 15.973 4.35 26.663v75.874c0 4.333.222 8.519.653 12.57.44 4.046 1.453 7.659 3.054 10.84 1.588 3.18 3.768 5.78 6.526 7.803 2.758 2.02 6.465 3.035 11.115 3.035h23.515V385H83.18c-5.512 0-10.959-1.159-16.327-3.469-5.377-2.318-10.237-5.787-14.592-10.407-4.355-4.628-7.913-10.334-10.671-17.124-2.759-6.795-4.134-14.52-4.134-23.194v-75.874c0-7.807-1.087-14.745-3.267-20.81-2.18-6.07-5.011-11.272-8.496-15.61-3.48-4.333-7.474-7.585-11.977-9.751-4.502-2.171-9.07-3.253-13.717-3.253v-26.012c4.646 0 9.215-1.159 13.717-3.477 4.503-2.306 8.496-5.558 11.977-9.752 3.485-4.186 6.317-9.322 8.496-15.392 2.18-6.07 3.267-12.852 3.267-20.376V54.195c0-8.67 1.445-16.403 4.355-23.198 2.894-6.787 6.53-12.496 10.89-17.124 4.35-4.62 9.214-8.085 14.587-10.403C72.662 1.16 77.96 0 83.18 0h30.493v26.012zM436.328 0h30.488c5.221 0 10.52 1.16 15.897 3.47 5.368 2.317 10.232 5.782 14.587 10.402 4.355 4.628 7.983 10.338 10.893 17.125 2.894 6.799 4.351 14.527 4.351 23.198v76.304c0 7.524 1.092 14.306 3.267 20.376 2.18 6.07 5.008 11.206 8.493 15.392 3.48 4.194 7.474 7.446 11.98 9.756 4.495 2.314 9.067 3.473 13.714 3.473v26.012c-4.647 0-9.22 1.081-13.714 3.252-4.506 2.167-8.5 5.419-11.98 9.752-3.485 4.337-6.313 9.54-8.493 15.609-2.175 6.07-3.267 13.004-3.267 20.81v75.874c0 8.675-1.383 16.4-4.133 23.194-2.766 6.791-6.32 12.496-10.676 17.125-4.355 4.62-9.223 8.089-14.587 10.407-5.377 2.31-10.824 3.469-16.332 3.469h-30.488v-26.016h23.515c4.642 0 8.344-1.016 11.11-3.035 2.755-2.023 4.86-4.624 6.313-7.803 1.45-3.182 2.463-6.794 3.054-10.84.57-4.052.87-8.237.87-12.57v-75.874c0-10.69 1.445-19.582 4.35-26.664 2.899-7.081 6.383-12.717 10.455-16.907 4.06-4.186 8.197-7.225 12.416-9.109 4.203-1.872 7.618-2.957 10.232-3.252v-.864c-2.614-.578-6.029-1.954-10.232-4.12-4.22-2.167-8.357-5.42-12.416-9.752-4.072-4.338-7.556-9.9-10.454-16.695-2.906-6.79-4.35-15.1-4.35-24.93V60.265c0-4.338-.3-8.528-.871-12.574-.591-4.047-1.605-7.729-3.054-11.055-1.453-3.321-3.558-5.922-6.312-7.806-2.767-1.872-6.47-2.818-11.111-2.818h-23.515V0zm-75.28 241.737c-21.248 16.915-46.692 26.213-71.491 26.213-1.326 0-2.643-.094-3.973-.148 10.996 13.254 25.821 24.206 43.179 31.382 28.78 11.898 60.053 11.624 84.7-.537-8.07-23.812-27.147-44.459-52.414-56.91" />
-            <path fill="#000006"
-                d="M370.929 232.977c12.556 6.8 23.593 15.511 32.643 25.554 14.234-8.09 25.953-18.96 34.071-31.537-10.983-11.85-25.76-20.983-42.723-26.373-6.013 11.673-14.079 22.666-23.991 32.356m-110.488 34.974c-24.8 0-50.243-9.301-71.492-26.212-25.263 12.45-44.345 33.101-52.41 56.906 24.648 12.164 55.92 12.435 84.7.54 17.358-7.175 32.183-18.131 43.175-31.381-1.322.053-2.643.147-3.973.147m14.606 6.252c-6.81 8.482-14.977 16.141-24.266 22.682 6.456 11.427 14.768 21.236 24.45 28.728 9.621-7.442 17.875-17.166 24.315-28.49a118.739 118.739 0 0 1-24.5-22.92m-128.62-15.671c9.054-10.043 20.095-18.75 32.646-25.553-9.916-9.69-17.982-20.684-23.995-32.36-16.96 5.393-31.735 14.527-42.723 26.376 8.123 12.578 19.841 23.444 34.071 31.537M375.43 148.507l-93.688 106.796c27.344 2.56 56.658-8.384 79.261-29.788 22.6-21.408 35.06-50.025 33.948-77.442-6.436-.594-12.982-.418-19.52.434" />
-            <path fill="#ED1944" d="m275.231 208.447 27.62-82.398h-55.239z" />
-            <path fill="#ED1944"
-                d="M234.623 126.048h-45.017v-12.287h40.901l-14.14-42.186 11.677-3.895 13.36 39.851 33.829-43.451 33.837 43.464 13.348-39.827 11.677 3.895-14.123 42.149h40.885v12.287h-45.018L276.92 242.142l106.035-120.865-51.741-61.887H219.252l-51.741 61.887 106.031 120.865z" />
-            <path fill="#ED1944" d="M252.152 113.761h46.159l-23.08-29.653z" />
-            <path fill="#000006"
-                d="M175.088 148.567c-6.71-.914-13.43-1.106-20.042-.496-1.112 27.417 11.35 56.038 33.948 77.442 22.604 21.4 51.906 32.353 79.266 29.793.008-.172 0-.348.004-.52l-93.176-106.22Z" />
+          <path fill="#000006"
+            d="M113.674 26.012H90.159c-4.65 0-8.357.943-11.115 2.818-2.758 1.88-4.938 4.485-6.526 7.807-1.6 3.326-2.615 7.008-3.054 11.05-.43 4.05-.652 8.24-.652 12.578v76.304c0 9.83-1.453 18.14-4.351 24.93-2.91 6.796-6.395 12.358-10.458 16.695-4.068 4.333-8.205 7.585-12.412 9.752-4.212 2.167-7.618 3.543-10.237 4.116v.868c2.619.295 6.025 1.38 10.237 3.252 4.207 1.885 8.344 4.924 12.412 9.11 4.063 4.19 7.548 9.825 10.458 16.907 2.898 7.081 4.35 15.973 4.35 26.663v75.874c0 4.333.222 8.519.653 12.57.44 4.046 1.453 7.659 3.054 10.84 1.588 3.18 3.768 5.78 6.526 7.803 2.758 2.02 6.465 3.035 11.115 3.035h23.515V385H83.18c-5.512 0-10.959-1.159-16.327-3.469-5.377-2.318-10.237-5.787-14.592-10.407-4.355-4.628-7.913-10.334-10.671-17.124-2.759-6.795-4.134-14.52-4.134-23.194v-75.874c0-7.807-1.087-14.745-3.267-20.81-2.18-6.07-5.011-11.272-8.496-15.61-3.48-4.333-7.474-7.585-11.977-9.751-4.502-2.171-9.07-3.253-13.717-3.253v-26.012c4.646 0 9.215-1.159 13.717-3.477 4.503-2.306 8.496-5.558 11.977-9.752 3.485-4.186 6.317-9.322 8.496-15.392 2.18-6.07 3.267-12.852 3.267-20.376V54.195c0-8.67 1.445-16.403 4.355-23.198 2.894-6.787 6.53-12.496 10.89-17.124 4.35-4.62 9.214-8.085 14.587-10.403C72.662 1.16 77.96 0 83.18 0h30.493v26.012zM436.328 0h30.488c5.221 0 10.52 1.16 15.897 3.47 5.368 2.317 10.232 5.782 14.587 10.402 4.355 4.628 7.983 10.338 10.893 17.125 2.894 6.799 4.351 14.527 4.351 23.198v76.304c0 7.524 1.092 14.306 3.267 20.376 2.18 6.07 5.008 11.206 8.493 15.392 3.48 4.194 7.474 7.446 11.98 9.756 4.495 2.314 9.067 3.473 13.714 3.473v26.012c-4.647 0-9.22 1.081-13.714 3.252-4.506 2.167-8.5 5.419-11.98 9.752-3.485 4.337-6.313 9.54-8.493 15.609-2.175 6.07-3.267 13.004-3.267 20.81v75.874c0 8.675-1.383 16.4-4.133 23.194-2.766 6.791-6.32 12.496-10.676 17.125-4.355 4.62-9.223 8.089-14.587 10.407-5.377 2.31-10.824 3.469-16.332 3.469h-30.488v-26.016h23.515c4.642 0 8.344-1.016 11.11-3.035 2.755-2.023 4.86-4.624 6.313-7.803 1.45-3.182 2.463-6.794 3.054-10.84.57-4.052.87-8.237.87-12.57v-75.874c0-10.69 1.445-19.582 4.35-26.664 2.899-7.081 6.383-12.717 10.455-16.907 4.06-4.186 8.197-7.225 12.416-9.109 4.203-1.872 7.618-2.957 10.232-3.252v-.864c-2.614-.578-6.029-1.954-10.232-4.12-4.22-2.167-8.357-5.42-12.416-9.752-4.072-4.338-7.556-9.9-10.454-16.695-2.906-6.79-4.35-15.1-4.35-24.93V60.265c0-4.338-.3-8.528-.871-12.574-.591-4.047-1.605-7.729-3.054-11.055-1.453-3.321-3.558-5.922-6.312-7.806-2.767-1.872-6.47-2.818-11.111-2.818h-23.515V0zm-75.28 241.737c-21.248 16.915-46.692 26.213-71.491 26.213-1.326 0-2.643-.094-3.973-.148 10.996 13.254 25.821 24.206 43.179 31.382 28.78 11.898 60.053 11.624 84.7-.537-8.07-23.812-27.147-44.459-52.414-56.91" />
+          <path fill="#000006"
+            d="M370.929 232.977c12.556 6.8 23.593 15.511 32.643 25.554 14.234-8.09 25.953-18.96 34.071-31.537-10.983-11.85-25.76-20.983-42.723-26.373-6.013 11.673-14.079 22.666-23.991 32.356m-110.488 34.974c-24.8 0-50.243-9.301-71.492-26.212-25.263 12.45-44.345 33.101-52.41 56.906 24.648 12.164 55.92 12.435 84.7.54 17.358-7.175 32.183-18.131 43.175-31.381-1.322.053-2.643.147-3.973.147m14.606 6.252c-6.81 8.482-14.977 16.141-24.266 22.682 6.456 11.427 14.768 21.236 24.45 28.728 9.621-7.442 17.875-17.166 24.315-28.49a118.739 118.739 0 0 1-24.5-22.92m-128.62-15.671c9.054-10.043 20.095-18.75 32.646-25.553-9.916-9.69-17.982-20.684-23.995-32.36-16.96 5.393-31.735 14.527-42.723 26.376 8.123 12.578 19.841 23.444 34.071 31.537M375.43 148.507l-93.688 106.796c27.344 2.56 56.658-8.384 79.261-29.788 22.6-21.408 35.06-50.025 33.948-77.442-6.436-.594-12.982-.418-19.52.434" />
+          <path fill="#ED1944" d="m275.231 208.447 27.62-82.398h-55.239z" />
+          <path fill="#ED1944"
+            d="M234.623 126.048h-45.017v-12.287h40.901l-14.14-42.186 11.677-3.895 13.36 39.851 33.829-43.451 33.837 43.464 13.348-39.827 11.677 3.895-14.123 42.149h40.885v12.287h-45.018L276.92 242.142l106.035-120.865-51.741-61.887H219.252l-51.741 61.887 106.031 120.865z" />
+          <path fill="#ED1944" d="M252.152 113.761h46.159l-23.08-29.653z" />
+          <path fill="#000006"
+            d="M175.088 148.567c-6.71-.914-13.43-1.106-20.042-.496-1.112 27.417 11.35 56.038 33.948 77.442 22.604 21.4 51.906 32.353 79.266 29.793.008-.172 0-.348.004-.52l-93.176-106.22Z" />
         </g>
-    </symbol>
-    <symbol fill="none" viewBox="0 0 32 32" id="icon-mastodon" xmlns="http://www.w3.org/2000/svg">
+      </symbol>
+      <symbol fill="none" viewBox="0 0 32 32" id="icon-mastodon" xmlns="http://www.w3.org/2000/svg">
         <circle cx="16" cy="16" r="16" fill="#000" />
         <path
-            d="M25.258 17.99c-.274 1.41-2.456 2.955-4.962 3.254-1.306.156-2.593.3-3.965.236-2.243-.103-4.014-.535-4.014-.535 0 .218.014.426.04.62.292 2.215 2.196 2.347 4 2.41 1.82.062 3.44-.45 3.44-.45l.076 1.646s-1.274.684-3.542.81c-1.25.068-2.803-.032-4.612-.51-3.923-1.039-4.598-5.22-4.701-9.464-.031-1.26-.012-2.447-.012-3.44 0-4.34 2.843-5.611 2.843-5.611 1.433-.658 3.892-.935 6.45-.956h.062c2.557.02 5.018.298 6.45.956 0 0 2.844 1.272 2.844 5.61 0 0 .036 3.201-.397 5.424Zm-2.956-5.087c0-1.074-.273-1.927-.822-2.558-.567-.631-1.308-.955-2.23-.955-1.064 0-1.87.41-2.404 1.228l-.518.87-.52-.87C15.277 9.8 14.47 9.39 13.406 9.39c-.921 0-1.663.324-2.23.955-.548.631-.821 1.484-.821 2.558v5.253h2.08v-5.099c0-1.075.453-1.62 1.358-1.62 1 0 1.5.647 1.5 1.927v2.79h2.07v-2.79c0-1.28.5-1.927 1.5-1.927.906 0 1.359.545 1.359 1.62v5.1h2.08v-5.255.001Z"
-            fill="#fff" />
-    </symbol>
-    <symbol viewBox="0 0 32 32" id="icon-twitter" xmlns="http://www.w3.org/2000/svg">
+          d="M25.258 17.99c-.274 1.41-2.456 2.955-4.962 3.254-1.306.156-2.593.3-3.965.236-2.243-.103-4.014-.535-4.014-.535 0 .218.014.426.04.62.292 2.215 2.196 2.347 4 2.41 1.82.062 3.44-.45 3.44-.45l.076 1.646s-1.274.684-3.542.81c-1.25.068-2.803-.032-4.612-.51-3.923-1.039-4.598-5.22-4.701-9.464-.031-1.26-.012-2.447-.012-3.44 0-4.34 2.843-5.611 2.843-5.611 1.433-.658 3.892-.935 6.45-.956h.062c2.557.02 5.018.298 6.45.956 0 0 2.844 1.272 2.844 5.61 0 0 .036 3.201-.397 5.424Zm-2.956-5.087c0-1.074-.273-1.927-.822-2.558-.567-.631-1.308-.955-2.23-.955-1.064 0-1.87.41-2.404 1.228l-.518.87-.52-.87C15.277 9.8 14.47 9.39 13.406 9.39c-.921 0-1.663.324-2.23.955-.548.631-.821 1.484-.821 2.558v5.253h2.08v-5.099c0-1.075.453-1.62 1.358-1.62 1 0 1.5.647 1.5 1.927v2.79h2.07v-2.79c0-1.28.5-1.927 1.5-1.927.906 0 1.359.545 1.359 1.62v5.1h2.08v-5.255.001Z"
+          fill="#fff" />
+      </symbol>
+      <symbol viewBox="0 0 32 32" id="icon-twitter" xmlns="http://www.w3.org/2000/svg">
         <path
-            d="M0 16C0 7.163 7.163 0 16 0s16 7.163 16 16-7.163 16-16 16S0 24.837 0 16Zm15.52-2.995.034.554-.56-.068c-2.036-.26-3.816-1.141-5.326-2.621l-.74-.735-.19.542c-.402 1.21-.145 2.486.695 3.345.447.474.346.542-.426.26-.268-.09-.503-.158-.526-.125-.078.08.19 1.108.403 1.514.291.565.884 1.12 1.533 1.447l.549.26-.65.01c-.626 0-.648.012-.581.25.224.734 1.108 1.513 2.093 1.852l.693.238-.604.361a6.301 6.301 0 0 1-3 .836c-.503.012-.917.057-.917.09 0 .114 1.365.746 2.16.995 2.384.734 5.215.418 7.342-.836 1.51-.893 3.021-2.667 3.727-4.384.38-.915.76-2.587.76-3.39 0-.52.034-.587.66-1.209.37-.361.717-.757.784-.87.112-.214.101-.214-.47-.022-.951.339-1.085.294-.615-.215.347-.361.76-1.017.76-1.209 0-.034-.167.023-.357.125-.202.113-.65.282-.985.384l-.605.192-.548-.373c-.302-.203-.727-.43-.951-.497-.571-.158-1.444-.136-1.959.045-1.399.508-2.283 1.82-2.182 3.254Z"
-            fill="currentColor" />
-    </symbol>
-    <symbol fill="none" viewBox="0 0 32 32" id="icon-youtube" xmlns="http://www.w3.org/2000/svg">
+          d="M0 16C0 7.163 7.163 0 16 0s16 7.163 16 16-7.163 16-16 16S0 24.837 0 16Zm15.52-2.995.034.554-.56-.068c-2.036-.26-3.816-1.141-5.326-2.621l-.74-.735-.19.542c-.402 1.21-.145 2.486.695 3.345.447.474.346.542-.426.26-.268-.09-.503-.158-.526-.125-.078.08.19 1.108.403 1.514.291.565.884 1.12 1.533 1.447l.549.26-.65.01c-.626 0-.648.012-.581.25.224.734 1.108 1.513 2.093 1.852l.693.238-.604.361a6.301 6.301 0 0 1-3 .836c-.503.012-.917.057-.917.09 0 .114 1.365.746 2.16.995 2.384.734 5.215.418 7.342-.836 1.51-.893 3.021-2.667 3.727-4.384.38-.915.76-2.587.76-3.39 0-.52.034-.587.66-1.209.37-.361.717-.757.784-.87.112-.214.101-.214-.47-.022-.951.339-1.085.294-.615-.215.347-.361.76-1.017.76-1.209 0-.034-.167.023-.357.125-.202.113-.65.282-.985.384l-.605.192-.548-.373c-.302-.203-.727-.43-.951-.497-.571-.158-1.444-.136-1.959.045-1.399.508-2.283 1.82-2.182 3.254Z"
+          fill="currentColor" />
+      </symbol>
+      <symbol fill="none" viewBox="0 0 32 32" id="icon-youtube" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#ga)">
-            <path
-                d="m18.565 15.733-3.594-1.677c-.313-.145-.57.018-.57.365v3.158c0 .348.257.51.57.365l3.592-1.677c.316-.147.316-.387.002-.534ZM16 .64C7.517.64.64 7.517.64 16S7.517 31.36 16 31.36 31.36 24.483 31.36 16 24.483.64 16 .64Zm0 21.6c-7.862 0-8-.709-8-6.24 0-5.531.138-6.24 8-6.24 7.863 0 8 .709 8 6.24 0 5.531-.137 6.24-8 6.24Z"
-                fill="currentColor" />
+          <path
+            d="m18.565 15.733-3.594-1.677c-.313-.145-.57.018-.57.365v3.158c0 .348.257.51.57.365l3.592-1.677c.316-.147.316-.387.002-.534ZM16 .64C7.517.64.64 7.517.64 16S7.517 31.36 16 31.36 31.36 24.483 31.36 16 24.483.64 16 .64Zm0 21.6c-7.862 0-8-.709-8-6.24 0-5.531.138-6.24 8-6.24 7.863 0 8 .709 8 6.24 0 5.531-.137 6.24-8 6.24Z"
+            fill="currentColor" />
         </g>
         <defs>
-            <clipPath id="ga">
-                <path fill="#fff" d="M0 0h32v32H0z" />
-            </clipPath>
+          <clipPath id="ga">
+            <path fill="#fff" d="M0 0h32v32H0z" />
+          </clipPath>
         </defs>
-    </symbol>
-    <symbol fill="none" viewBox="0 0 32 32" id="icon-website"  xmlns="http://www.w3.org/2000/svg">
+      </symbol>
+      <symbol fill="none" viewBox="0 0 32 32" id="icon-website" xmlns="http://www.w3.org/2000/svg">
         <circle cx="16" cy="16" r="16" fill="#000" />
-        <path d="M16 6C14.0222 6 12.0888 6.58649 10.4443 7.6853C8.79981 8.78412 7.51809 10.3459 6.76121 12.1732C6.00433 14.0004 5.8063 16.0111 6.19215 17.9509C6.578 19.8907 7.53041 21.6725 8.92894 23.0711C10.3275 24.4696 12.1093 25.422 14.0491 25.8078C15.9889 26.1937 17.9996 25.9957 19.8268 25.2388C21.6541 24.4819 23.2159 23.2002 24.3147 21.5557C25.4135 19.9112 26 17.9778 26 16C25.9972 13.3487 24.9427 10.8068 23.068 8.93202C21.1932 7.05727 18.6513 6.0028 16 6ZM13.4644 19.8461H18.5356C18.0192 21.6096 17.1538 23.199 16 24.451C14.8462 23.199 13.9808 21.6096 13.4644 19.8461ZM13.1154 18.3077C12.8603 16.7798 12.8603 15.2202 13.1154 13.6923H18.8846C19.1397 15.2202 19.1397 16.7798 18.8846 18.3077H13.1154ZM7.53847 16C7.5378 15.2196 7.64556 14.443 7.85866 13.6923H11.5567C11.3272 15.2222 11.3272 16.7778 11.5567 18.3077H7.85866C7.64556 17.557 7.5378 16.7803 7.53847 16ZM18.5356 12.1538H13.4644C13.9808 10.3904 14.8462 8.80096 16 7.54904C17.1538 8.80096 18.0192 10.3904 18.5356 12.1538ZM20.4433 13.6923H24.1413C24.5683 15.2011 24.5683 16.7988 24.1413 18.3077H20.4433C20.6728 16.7778 20.6728 15.2222 20.4433 13.6923ZM23.5356 12.1538H20.1288C19.7363 10.6091 19.077 9.14485 18.1808 7.82692C19.3258 8.13463 20.3938 8.67858 21.316 9.42378C22.2382 10.169 22.9943 11.0989 23.5356 12.1538ZM13.8192 7.82692C12.923 9.14485 12.2637 10.6091 11.8712 12.1538H8.46443C9.0057 11.0989 9.76176 10.169 10.684 9.42378C11.6062 8.67858 12.6742 8.13463 13.8192 7.82692ZM8.46443 19.8461H11.8712C12.2637 21.3909 12.923 22.8551 13.8192 24.1731C12.6742 23.8654 11.6062 23.3214 10.684 22.5762C9.76176 21.831 9.0057 20.9011 8.46443 19.8461ZM18.1808 24.1731C19.077 22.8551 19.7363 21.3909 20.1288 19.8461H23.5356C22.9943 20.9011 22.2382 21.831 21.316 22.5762C20.3938 23.3214 19.3258 23.8654 18.1808 24.1731Z" fill="white"/>            
-    </symbol>
-</svg>
+        <path
+          d="M16 6C14.0222 6 12.0888 6.58649 10.4443 7.6853C8.79981 8.78412 7.51809 10.3459 6.76121 12.1732C6.00433 14.0004 5.8063 16.0111 6.19215 17.9509C6.578 19.8907 7.53041 21.6725 8.92894 23.0711C10.3275 24.4696 12.1093 25.422 14.0491 25.8078C15.9889 26.1937 17.9996 25.9957 19.8268 25.2388C21.6541 24.4819 23.2159 23.2002 24.3147 21.5557C25.4135 19.9112 26 17.9778 26 16C25.9972 13.3487 24.9427 10.8068 23.068 8.93202C21.1932 7.05727 18.6513 6.0028 16 6ZM13.4644 19.8461H18.5356C18.0192 21.6096 17.1538 23.199 16 24.451C14.8462 23.199 13.9808 21.6096 13.4644 19.8461ZM13.1154 18.3077C12.8603 16.7798 12.8603 15.2202 13.1154 13.6923H18.8846C19.1397 15.2202 19.1397 16.7798 18.8846 18.3077H13.1154ZM7.53847 16C7.5378 15.2196 7.64556 14.443 7.85866 13.6923H11.5567C11.3272 15.2222 11.3272 16.7778 11.5567 18.3077H7.85866C7.64556 17.557 7.5378 16.7803 7.53847 16ZM18.5356 12.1538H13.4644C13.9808 10.3904 14.8462 8.80096 16 7.54904C17.1538 8.80096 18.0192 10.3904 18.5356 12.1538ZM20.4433 13.6923H24.1413C24.5683 15.2011 24.5683 16.7988 24.1413 18.3077H20.4433C20.6728 16.7778 20.6728 15.2222 20.4433 13.6923ZM23.5356 12.1538H20.1288C19.7363 10.6091 19.077 9.14485 18.1808 7.82692C19.3258 8.13463 20.3938 8.67858 21.316 9.42378C22.2382 10.169 22.9943 11.0989 23.5356 12.1538ZM13.8192 7.82692C12.923 9.14485 12.2637 10.6091 11.8712 12.1538H8.46443C9.0057 11.0989 9.76176 10.169 10.684 9.42378C11.6062 8.67858 12.6742 8.13463 13.8192 7.82692ZM8.46443 19.8461H11.8712C12.2637 21.3909 12.923 22.8551 13.8192 24.1731C12.6742 23.8654 11.6062 23.3214 10.684 22.5762C9.76176 21.831 9.0057 20.9011 8.46443 19.8461ZM18.1808 24.1731C19.077 22.8551 19.7363 21.3909 20.1288 19.8461H23.5356C22.9943 20.9011 22.2382 21.831 21.316 22.5762C20.3938 23.3214 19.3258 23.8654 18.1808 24.1731Z"
+          fill="white" />
+      </symbol>
+    </svg>
+  </div>
+
+  <header class="app-header">
+    <div class="container">
+      <a href="../" class="app-header__logo logo logo--text-icon">
+        <span class="visually-hidden">RubyConf TH {💎}</span>
+      </a>
+
+      <div class="app-header__navigation" data-controller="navigation">
+        <label class="btn-toggle app-header__toggle">
+          <i class="btn-toggle__icon"></i>
+          <span class="visually-hidden">Toggle Menu</span>
+          <input type="checkbox" name="toggle-menu" class="btn-toggle__input visually-hidden"
+            data-action="navigation#toggleMenu" />
+        </label>
+
+        <nav class="app-navigation">
+          <ul class="app-navigation__list">
+
+            <li class="app-navigation__item">
+              <a href="../venue" class="app-navigation__link">
+                <span class="app-navigation__text">Venue</span>
+              </a>
+            </li>
+
+            <li class="app-navigation__item">
+              <a href="../schedule" class="app-navigation__link">
+                <span class="app-navigation__text">Schedule</span>
+              </a>
+            </li>
+
+            <li class="app-navigation__item">
+              <a href="../speakers" class="app-navigation__link">
+                <span class="app-navigation__text">Speakers</span>
+              </a>
+            </li>
+
+            <li class="app-navigation__item">
+              <a href="../sponsors" class="app-navigation__link">
+                <span class="app-navigation__text">Sponsors</span>
+              </a>
+            </li>
+
+            <li class="app-navigation__item">
+              <a href="../practicalities" class="app-navigation__link">
+                <span class="app-navigation__text">Practicalities</span>
+              </a>
+            </li>
+
+            <li class="app-navigation__item">
+              <a href="../code-of-conduct" class="app-navigation__link">
+                <span class="app-navigation__text">Code of Conduct</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
     </div>
+  </header>
 
-    <header class="app-header">
-  <div class="container">
-    <a href="/" class="app-header__logo logo logo--text-icon">
-      <span class="visually-hidden">RubyConf TH {💎}</span>
-    </a>
 
-    <div class="app-header__navigation" data-controller="navigation">
-      <label class="btn-toggle app-header__toggle">
-        <i class="btn-toggle__icon"></i>
-        <span class="visually-hidden">Toggle Menu</span>
-        <input type="checkbox" name="toggle-menu" class="btn-toggle__input visually-hidden" data-action="navigation#toggleMenu" />
-      </label>
+  <div class="app-hero">
+    <div class="container">
+      <div class="app-hero__heading display-1">Practicalities</div>
+    </div>
+  </div>
 
-      <nav class="app-navigation">
-        <ul class="app-navigation__list">
-          
-          <li class="app-navigation__item">
-            <a href="/venue" class="app-navigation__link">
-              <span class="app-navigation__text">Venue</span>
-            </a>
+  <main class="app-content">
+    <div class="container">
+      <p>On this page you’ll find our <strong>A-Z of Practicalities for RubyConf TH 2023</strong>.</p>
+
+      <p><small>Information is updated regularly. So you can expect changes the closer we get to the event.<br />Last
+          updated on <mark>October 1, 2023</mark>.</small></p>
+
+      <section class="section-text">
+        <h2>Airports</h2>
+
+        <p>Bangkok is served by two airports: Suvarnabhumi (pronounced “su-vahn-a-boom”, the final “i” is silent)
+          Airport (<strong>BKK</strong>) and Don Mueang Airport (<strong>DMK</strong>). Suvarnabhumi Airport is the main
+          airport and used by all full-service airlines, but most low cost carriers use Don Mueang Airport. Both
+          airports lie about 30 km (19 mi) out on opposite sides of the city, so be prepared for a long ride to get into
+          the city centre.</p>
+
+        <h3 id="from-suvarnabhumi-airport-bkk-by-train">From Suvarnabhumi Airport (BKK) by Train</h3>
+
+        <p>From BKK, the easiest way to get into the city is either via the Airport Rail Link train or taxi.</p>
+
+        <p>On the basement level of the passenger terminal, the Airport Rail Link offers a speedy train service to
+          downtown. It’s also a way of avoiding Bangkok’s horrendous rush hour traffic, particularly when it’s raining.
+          Trains depart 06:00-midnight every day. See <a href="http://www.bangkok.com/airport-rail-link.htm">Airport
+            Rail Link</a> for more information.</p>
+
+        <h3 id="from-suvarnabhumi-airport-bkk-by-taxi">From Suvarnabhumi Airport (BKK) by Taxi</h3>
+
+        <p>To take a taxi, follow the signs to the public taxi area between exits 4 and 7 on the 1st floor. Find the
+          public taxi slip dispensing machine (you may need to wait in line). We recommend viewing <a
+            href="`https://www.youtube.com/watch?v=yEWA8BoVXk8">this video</a>. The “Lane Number” on the slip will be
+          the number of the bay where you taxi will be waiting for you. Go to that bay number.</p>
+
+        <p>For taxis, the meter price for a trip to the conference venue area will cost 250-400 baht. In addition, there
+          is a 50 baht airport surcharge and highway tolls of about 75 baht.</p>
+
+        <p>The driver may ask you, possibly with difficulty in English, whether or not you want to take the toll
+          highway. We recommend doing so. The driver may ask you for cash for the tolls during your trip. There are two
+          tolls so they may not return the change until after the second one. If you don’t have any bills smaller than
+          1000’s, this may be a good opportunity to break one into smaller bills.</p>
+
+        <p>Ignore any touts who offer you a taxi; they may pretend to be public meter taxis, but are not.</p>
+
+        <p><strong>You will need cash for taxis in Thailand, credit cards are not accepted.</strong> There are ATM’s and
+          currency exchange booths in the airport.</p>
+
+        <p>It may be possible to use the Grab (like Uber) ride-hailing service from the airport, but there are
+          logistical issues that can make this a challenge. See the transportation section for more information about
+          Grab.</p>
+
+        <h3 id="from-don-mueang-airport-dmk">From Don Mueang Airport (DMK)</h3>
+
+        <p>From DMK there is limited public transport (a new Red Line train opened recently, but trains are infrequent),
+          so a taxi is the easiest. Follow the signs to the main taxi stand and ignore the touts.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Budgeting</h2>
+
+        <p>By international “big city” standards, Thailand is inexpensive, but costs can still add up quickly. We
+          understand that in the current economic situation, many people and companies are struggling. We’ve compiled a
+          few money-saving tips to ensure you can enjoy your time in Bangkok.</p>
+
+        <ul>
+          <li>Flights: This is likely to be your biggest expense when coming from abroad. Use a flights aggregator like
+            <a href="https://www.google.com/flights">Google Flights</a> or <a href="https://kiwi.com">Kiwi.com</a>.
+            Consider being somewhat flexible on dates or routes, flights with a stop are often cheaper than direct
+            flights.</li>
+          <li>Accommodation: You don’t have to stay at the conference hotel, there are many other hotels and hostels in
+            the neighbourhood and around the city, at all price levels.
+            <ul>
+              <li>Hostel beds are available for under 800 THB</li>
+              <li>There are many good 2-4 star hotels for 1000-2000 THB/night</li>
+              <li>Five star hotels are available from 2500THB/night upwards</li>
+            </ul>
           </li>
-          
-          <li class="app-navigation__item">
-            <a href="/schedule" class="app-navigation__link">
-              <span class="app-navigation__text">Schedule</span>
-            </a>
-          </li>
-          
-          <li class="app-navigation__item">
-            <a href="/speakers" class="app-navigation__link">
-              <span class="app-navigation__text">Speakers</span>
-            </a>
-          </li>
-          
-          <li class="app-navigation__item">
-            <a href="/sponsors" class="app-navigation__link">
-              <span class="app-navigation__text">Sponsors</span>
-            </a>
-          </li>
-          
-          <li class="app-navigation__item">
-            <a href="/practicalities" class="app-navigation__link">
-              <span class="app-navigation__text">Practicalities</span>
-            </a>
-          </li>
-          
-          <li class="app-navigation__item">
-            <a href="/code-of-conduct" class="app-navigation__link">
-              <span class="app-navigation__text">Code of Conduct</span>
-            </a>
-          </li>
-          
+          <li>Food and drink: Thai street food is cheap and internationally renowned! Stick to non-alcoholic drinks to
+            save money as alcohol is heavily taxed.</li>
+          <li>Freebies: Make the most of the free coffee and snack breaks, buffet lunch and official party!</li>
         </ul>
-      </nav>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Code of Conduct</h2>
+
+        <p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the <a
+            href="https://rubyconfth.com/code-of-conduct">code of conduct</a>. Organisers will enforce this code
+          throughout the event. We expect cooperation from all participants to help ensure a safe environment for
+          everybody.</p>
+
+        <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please
+          contact a conference staff member immediately. Conference staff can be identified as they’ll be wearing red
+          STAFF t-shirts and STAFF lanyards.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>COVID restrictions</h2>
+
+        <p>As of October 1st 2022, there are no COVID-related restrictions to enter Thailand (no vaccination proof, no
+          “Thailand Pass”, no mandatory tests). <a
+            href="https://www.tatnews.org/2022/09/thailand-ends-covid-19-emergency-decree-on-30-september-2022/">Official
+            Thailand Tourist Authority website</a></p>
+
+        <p>It is not required to wear a mask at the conference, however you are welcome to do so: conferences are an
+          easy place for diseases like COVID to spread.</p>
+
+        <p>Masks are no longer mandatory, however they are recommended in crowded and indoor places. You will see a lot
+          of people wearing masks, especially on public transport and in shops. If asked to put a mask to enter a venue,
+          please put one on.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Dietary Requirements</h2>
+
+        <p>Vegetarian and Halal options will be available for lunch on each day of the conference. If you have any
+          concerns please contact us in the Slack channel.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Entry Requirements</h2>
+
+        <h3 id="visas">Visas</h3>
+
+        <p>Many nationalities including US, most EU countries, UK etc, can enter Thailand without needing a visa for up
+          to 45 days. A full list of countries is available at <a
+            href="https://www.thaiembassy.com/thailand/changes-visa-exempt.php">Visa Exempt countries</a> .</p>
+
+        <p>Additionally, some nationalities such as Indian and Chinese can receive a “visa on arrival”. For more details
+          see <a href="https://www.thaiembassy.com/thailand/visa-on-arrival.php">Visa on Arrival countries</a> .</p>
+
+        <p>Always check with your own government’s advice before travelling, for example here is the advice from the <a
+            href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Thailand.html">US</a>,
+          <a href="https://www.gov.uk/foreign-travel-advice/thailand">UK</a> and <a
+            href="https://www.smartraveller.gov.au/destinations/asia/thailand">Australian</a> governments.</p>
+
+        <h3 id="covid-requirements">COVID requirements</h3>
+
+        <p>As of October 1st 2022, there are no longer any COVID-related restrictions to enter Thailand (no vaccination
+          proof, no “Thailand Pass”, no mandatory tests). <a
+            href="https://www.tatnews.org/2022/09/thailand-ends-covid-19-emergency-decree-on-30-september-2022/">Official
+            Thailand Tourist Authority website</a> If you have vaccination documentation, it could still make sense to
+          travel with it as other destinations or transit points could still require it.</p>
+
+        <h3 id="travel-medical-insurance">Travel Medical Insurance</h3>
+
+        <p>It is recommended to have your own travel/health insurance before visiting Thailand.</p>
+        <h3 id="return-ticket">Return Ticket</h3>
+
+        <p>You should have proof you will leave the country, such as an onward flight ticket. International flights
+          within Southeast Asia are inexpensive, or you could purchase a refundable ticket.</p>
+        <h3 id="passport-expiration-date-requirement">Passport Expiration Date Requirement</h3>
+
+        <p>Your passport’s expiration date should be at least six months later than the date you enter Thailand.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Health/Vaccinations</h2>
+
+        <p>Check with a doctor in your home country to see if you require any vaccinations before travelling to
+          Thailand. It is best to start this process as soon as possible, as some vaccines may be difficult to find, or
+          require multiple doses spaced apart. A useful resource for more information about this is at <a
+            href="https://wwwnc.cdc.gov/travel/page/travel-vaccines">CDC Travel Vaccines</a>.)</p>
+
+        <p>If you need emergency medical assistance during your trip, dial 1669 (this may not work with non-Thai phone
+          numbers) and ask for an ambulance. You should contact your insurance/medical assistance company promptly if
+          you are referred to a medical facility for treatment.</p>
+
+        <p>Medical care in Thailand is excellent. It is much cheaper than more developed countries, but a serious
+          incident can incur substantial charges. You should have your own travel/health insurance before visiting
+          Thailand.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Meetup</h2>
+
+        <p>On Tuesday 3rd October, before the conference, why not join our free informal meet-up at the Urban Office to
+          meet and mingle with speakers and other attendees - <a
+            href="https://www.meetup.com/bangkok-rb/events/293929593/">RSVP here</a>!</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Money</h2>
+
+        <p>Thailand uses the Thai baht as its currency, 38 THB is approximately 1 USD. Credit cards are widely accepted
+          (Visa and Mastercard always work, JCB sometimes, Amex only occasionally). That said, taxis, street vendors,
+          and some shops and restaurants will only accept cash, so we do recommend having some cash on you.</p>
+
+        <p>When withdrawing money from an ATM, you will be charged a fixed fee of 220 baht, so it’s generally best to
+          withdraw 5,000 THB or 10,000 THB at a time. (To USA residents: you can open an ATM-fee-free account online at
+          <a href="https://www.schwab.com/public/schwab/banking_lending/checking_account">Charles Schwab</a>.)</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Official Party</h2>
+
+        <p>The official party is held on Friday evening at <a href="https://thedeckbkk.com/">The Deck</a>, which is 1
+          minutes walk from the conference venue! We’ll provide volunteers to help you make your way to the party from
+          the hotel!</p>
+
+        <p>The party is free for all attendees (simply wear your conference lanyard)!</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Plugs/Adaptors</h2>
+
+        <p>Thailand uses 220V AC and US-style plugs with two thin prongs. Before plugging in any devices check your
+          adaptor will work with 220V. Many hotels have plugs which also accept European and UK style plugs.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Safety and Scams</h2>
+
+        <p>Bangkok is generally a safe place but like any large city you should keep your wits about you.</p>
+
+        <ul>
+          <li>The roads in Bangkok and Thailand are very dangerous. Always wear a seatbelt and avoid using motorbike
+            taxis.</li>
+          <li>Traffic drives on the left side of the road here, so be sure to look right when you cross the street.
+            Also, it is not uncommon for motorbikes to ride in the wrong direction, so it’s best to look both ways!</li>
+          <li>Ignore touts at the airport, go straight to the public taxi queue.</li>
+          <li>If someone tries to sell you gems, it’s a scam.</li>
+          <li>If someone tells you a tourist attraction/hotel/restaurant is closed, and to come with them instead, it’s
+            a scam.</li>
+          <li>Places recommended by your taxi/tuktuk driver could be scams or providing kickbacks to the driver. Do your
+            own research online if you want to, for example, buy a suit or sample some of Bangkok’s nightlife.</li>
+          <li>Bangkok’s tap water is not safe to drink, so drink bottled water, even for brushing your teeth.</li>
+          <li>Bangkok can be very hot. Carry a bottle of water with you and stay hydrated.</li>
+          <li>In extreme situations, you may need or want to call the police. Thailand has “Tourist Police”, who can be
+            contacted by dialing 1155 from a Thai phone number.</li>
+          <li>If you don’t intend to carry your passport around with you, it may be helpful to make a copy of the
+            information page and carry it in your wallet. Most places that say they require a passport also accept a
+            photocopy.</li>
+        </ul>
+
+      </section>
+
+      <section class="section-text">
+        <h2>SIM Cards</h2>
+
+        <p>The three major cell service providers are True, AIS, and DTAC. SIM cards sold at the airport after you exit
+          baggage claim are fairly priced and inexpensive, so you should just pick one up there, including phone calls
+          and fast 4G data. In general True has the best signal coverage, but if you will just be in Bangkok it doesn’t
+          matter much.</p>
+
+        <p>You may need to modify your phone’s configuration to work in Thailand. We recommend installing the SIM card,
+          and testing both a) phone calling or receiving and b) mobile Internet data access, before leaving the kiosk.
+          Kiosk agents are usually happy to help with this.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Slack</h2>
+
+        <p>We have set up a Slack group so you can easily ask questions before and during the conference. <a
+            href="https://join.slack.com/t/rubyconfth/shared_invite/enQtNzEwMTk1MjEyMjg4LTcyOTQwZjNjODE1ZTQzMzllNmY2NTMxOTM3NWI2Mzk0ZmJmNWE3MjdlYzBhOGQ1NDdjOWI4ZWYyZGJiYzU4YWU">Join
+            here</a> .</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Transportation</h2>
+
+        <p>The <strong>Airport Rail Link</strong> (<a
+            href="http://www.bangkok.com/airport-rail-link.htm">http://www.bangkok.com/airport-rail-link.htm</a> ) will
+          easily get you from the airport to downtown.</p>
+
+        <p>The <strong>BTS Skytrain</strong> is an elevated rapid transit/metro system. There are two lines, the
+          Sukhumvit Line (light green) and Silom Line (dark green) which interchange at Siam station. You can buy
+          tickets in cash at any station, or purchase a Rabbit card which allows preloading multiple journeys. You must
+          show your passport to buy a Rabbit card.</p>
+
+        <p>The <strong>MRT</strong> is an underground metro system, with two lines, the Blue Line and Purple Line, of
+          which the Blue Line is the most convenient for tourists. You can buy tickets in cash at any station, or
+          purchase a MRT card which allows preloading multiple journeys. The MRT and BTS have completely separate
+          ticketing systems.</p>
+
+        <p>You can use the free Explore Bangkok metro map app for <a
+            href="https://apps.apple.com/th/app/explore-bangkok/id1076159526">iOS</a> and <a
+            href="https://play.google.com/store/apps/details?id=com.exploremetro.bk&amp;hl=en">Android</a> for planning
+          routes on the Airport Rail Link MRT and BTS, it works offline.</p>
+
+        <p>Public <strong>buses</strong> are confusing for tourists and not recommended!</p>
+
+        <p><strong>Taxis</strong> are cheap and plentiful, but sometimes it can be hard to find a taxi willing to take
+          you to your destination, and taxi drivers rarely speak good English. Insist on using the meter. If the driver
+          refuses, get out and find another taxi.</p>
+
+        <p>Taxis often claim not to have change, so it’s best not to try to pay with a 1000THB bill. If necessary ask
+          your hotel to break a bill, or pop into a 7-11 convenience store and buy something small like a bottle of
+          water. The taxi will wait ;)</p>
+
+        <p><strong>Motorbike taxis</strong> are a popular way for locals to get around but due to the poor road
+          conditions in Bangkok, and the lack of passenger helmets, can be very dangerous. Stick to regular taxis which
+          give you more protection if there’s an accident.</p>
+
+        <p>“<strong>Tuktuks</strong>” are an iconic image of Bangkok, but really only used by tourists. If you want to
+          ride one for fun, be sure to bargain the price with the driver as there are no meters. Some hotels have free
+          tuktuks for their guests.</p>
+
+        <p>As an alternative to hailing a taxi, you can use the <a href="https://www.grab.com/th/en/download/">Grab
+            ride-hailing app</a>, which works similarly to apps like Uber or Lyft. The app works well in English, and
+          you can type in your destination and see an instant price for your journey. It works best if you have mobile
+          data (a Thai SIM card is probably best for this) so you can access the Internet anywhere. The app will show
+          the license plate of your vehicle. Prices are typically slightly more expensive than a taxi. Actual arrival
+          times are often longer than stated on the app. Grab is especially useful if you are not on a main road where
+          taxis are likely to be plentiful. An alternative to Grab is <a href="https://bolt.eu/">Bolt</a> which is
+          generally cheaper, though has fewer cars.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Tipping</h2>
+
+        <p>Tips will never be refused, but there’s not much of a tipping culture in Thailand.</p>
+
+        <p>All restaurant bills will already have a 7% tax and 10% service charge included. <strong>You don’t need to
+            tip on top of that</strong></p>
+
+        <p>Coins are pretty low-value in Thailand, so it’s normal to just round up to the next 10/20THB bill and leave
+          the coins when you receive change.</p>
+
+        <p>You should tip someone who carries suitcases up to your room in a hotel.</p>
+
+      </section>
+
+      <section class="section-text">
+        <h2>Weather</h2>
+
+        <p>Bangkok is hot and wet (and the 2023 rainy season is especially wet!). In October, Bangkok has daily highs of
+          around 32 Celsius (89F) and lows of 24 Celsius (75F), and you can expect sudden downpours of rain, especially
+          in the afternoon. If you get caught in a storm, it’s generally best to just wait it out in a mall. It’s best
+          to carry a small umbrella or raincoat (which you can also easily get at a convenience store).</p>
+
+        <p><a href="https://www.bbc.com/weather/1609350">14 day forecast from the BBC</a></p>
+
+        <p><img src="../images/practicalities/weather.png" alt="Weather in Bangkok" /></p>
+
+      </section>
+
     </div>
-  </div>
-</header>
+  </main>
 
-
-    <div class="app-hero">
-      <div class="container">
-        <div class="app-hero__heading display-1">Practicalities</div>
-      </div>
-    </div>
-
-    <main class="app-content">
-      <div class="container">
-        <p>On this page you’ll find our <strong>A-Z of Practicalities for RubyConf TH 2023</strong>.</p>
-
-<p><small>Information is updated regularly. So you can expect changes the closer we get to the event.<br />Last updated on <mark>October 1, 2023</mark>.</small></p>
-
-<section class="section-text">
-  <h2>Airports</h2>
-  
-<p>Bangkok is served by two airports: Suvarnabhumi (pronounced “su-vahn-a-boom”, the final “i” is silent) Airport (<strong>BKK</strong>) and Don Mueang Airport (<strong>DMK</strong>). Suvarnabhumi Airport is the main airport and used by all full-service airlines, but most low cost carriers use Don Mueang Airport. Both airports lie about 30 km (19 mi) out on opposite sides of the city, so be prepared for a long ride to get into the city centre.</p>
-
-<h3 id="from-suvarnabhumi-airport-bkk-by-train">From Suvarnabhumi Airport (BKK) by Train</h3>
-
-<p>From BKK, the easiest way to get into the city is either via the Airport Rail Link train or taxi.</p>
-
-<p>On the basement level of the passenger terminal, the Airport Rail Link offers a speedy train service to downtown. It’s also a way of avoiding Bangkok’s horrendous rush hour traffic, particularly when it’s raining. Trains depart 06:00-midnight every day. See <a href="http://www.bangkok.com/airport-rail-link.htm">Airport Rail Link</a> for more information.</p>
-
-<h3 id="from-suvarnabhumi-airport-bkk-by-taxi">From Suvarnabhumi Airport (BKK) by Taxi</h3>
-
-<p>To take a taxi, follow the signs to the public taxi area between exits 4 and 7 on the 1st floor. Find the public taxi slip dispensing machine (you may need to wait in line). We recommend viewing <a href="`https://www.youtube.com/watch?v=yEWA8BoVXk8">this video</a>. The “Lane Number” on the slip will be the number of the bay where you taxi will be waiting for you. Go to that bay number.</p>
-
-<p>For taxis, the meter price for a trip to the conference venue area will cost 250-400 baht. In addition, there is a 50 baht airport surcharge and highway tolls of about 75 baht.</p>
-
-<p>The driver may ask you, possibly with difficulty in English, whether or not you want to take the toll highway. We recommend doing so. The driver may ask you for cash for the tolls during your trip. There are two tolls so they may not return the change until after the second one. If you don’t have any bills smaller than 1000’s, this may be a good opportunity to break one into smaller bills.</p>
-
-<p>Ignore any touts who offer you a taxi; they may pretend to be public meter taxis, but are not.</p>
-
-<p><strong>You will need cash for taxis in Thailand, credit cards are not accepted.</strong> There are ATM’s and currency exchange booths in the airport.</p>
-
-<p>It may be possible to use the Grab (like Uber) ride-hailing service from the airport, but there are logistical issues that can make this a challenge. See the transportation section for more information about Grab.</p>
-
-<h3 id="from-don-mueang-airport-dmk">From Don Mueang Airport (DMK)</h3>
-
-<p>From DMK there is limited public transport (a new Red Line train opened recently, but trains are infrequent), so a taxi is the easiest. Follow the signs to the main taxi stand and ignore the touts.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Budgeting</h2>
-  
-<p>By international “big city” standards, Thailand is inexpensive, but costs can still add up quickly. We understand that in the current economic situation, many people and companies are struggling. We’ve compiled a few money-saving tips to ensure you can enjoy your time in Bangkok.</p>
-
-<ul>
-  <li>Flights: This is likely to be your biggest expense when coming from abroad. Use a flights aggregator like <a href="https://www.google.com/flights">Google Flights</a> or <a href="https://kiwi.com">Kiwi.com</a>. Consider being somewhat flexible on dates or routes, flights with a stop are often cheaper than direct flights.</li>
-  <li>Accommodation: You don’t have to stay at the conference hotel, there are many other hotels and hostels in the neighbourhood and around the city, at all price levels.
-    <ul>
-      <li>Hostel beds are available for under 800 THB</li>
-      <li>There are many good 2-4 star hotels for 1000-2000 THB/night</li>
-      <li>Five star hotels are available from 2500THB/night upwards</li>
-    </ul>
-  </li>
-  <li>Food and drink: Thai street food is cheap and internationally renowned! Stick to non-alcoholic drinks to save money as alcohol is heavily taxed.</li>
-  <li>Freebies: Make the most of the free coffee and snack breaks, buffet lunch and official party!</li>
-</ul>
-
-</section>
-
-<section class="section-text">
-  <h2>Code of Conduct</h2>
-  
-<p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the <a href="https://rubyconfth.com/code-of-conduct">code of conduct</a>. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.</p>
-
-<p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a conference staff member immediately. Conference staff can be identified as they’ll be wearing red STAFF t-shirts and STAFF lanyards.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>COVID restrictions</h2>
-  
-<p>As of October 1st 2022, there are no COVID-related restrictions to enter Thailand (no vaccination proof, no “Thailand Pass”, no mandatory tests). <a href="https://www.tatnews.org/2022/09/thailand-ends-covid-19-emergency-decree-on-30-september-2022/">Official Thailand Tourist Authority website</a></p>
-
-<p>It is not required to wear a mask at the conference, however you are welcome to do so: conferences are an easy place for diseases like COVID to spread.</p>
-
-<p>Masks are no longer mandatory, however they are recommended in crowded and indoor places. You will see a lot of people wearing masks, especially on public transport and in shops. If asked to put a mask to enter a venue, please put one on.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Dietary Requirements</h2>
-  
-<p>Vegetarian and Halal options will be available for lunch on each day of the conference. If you have any concerns please contact us in the Slack channel.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Entry Requirements</h2>
-  
-<h3 id="visas">Visas</h3>
-
-<p>Many nationalities including US, most EU countries, UK etc, can enter Thailand without needing a visa for up to 45 days. A full list of countries is available at <a href="https://www.thaiembassy.com/thailand/changes-visa-exempt.php">Visa Exempt countries</a> .</p>
-
-<p>Additionally, some nationalities such as Indian and Chinese can receive a “visa on arrival”. For more details see <a href="https://www.thaiembassy.com/thailand/visa-on-arrival.php">Visa on Arrival countries</a> .</p>
-
-<p>Always check with your own government’s advice before travelling, for example here is the advice from the <a href="https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Thailand.html">US</a>, <a href="https://www.gov.uk/foreign-travel-advice/thailand">UK</a> and <a href="https://www.smartraveller.gov.au/destinations/asia/thailand">Australian</a> governments.</p>
-
-<h3 id="covid-requirements">COVID requirements</h3>
-
-<p>As of October 1st 2022, there are no longer any COVID-related restrictions to enter Thailand (no vaccination proof, no “Thailand Pass”, no mandatory tests).  <a href="https://www.tatnews.org/2022/09/thailand-ends-covid-19-emergency-decree-on-30-september-2022/">Official Thailand Tourist Authority website</a> If you have vaccination documentation, it could still make sense to travel with it as other destinations or transit points could still require it.</p>
-
-<h3 id="travel-medical-insurance">Travel Medical Insurance</h3>
-
-<p>It is recommended to have your own travel/health insurance before visiting Thailand.</p>
-<h3 id="return-ticket">Return Ticket</h3>
-
-<p>You should have proof you will leave the country, such as an onward flight ticket. International flights within Southeast Asia are inexpensive, or you could purchase a refundable ticket.</p>
-<h3 id="passport-expiration-date-requirement">Passport Expiration Date Requirement</h3>
-
-<p>Your passport’s expiration date should be at least six months later than the date you enter Thailand.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Health/Vaccinations</h2>
-  
-<p>Check with a doctor in your home country to see if you require any vaccinations before travelling to Thailand. It is best to start this process as soon as possible, as some vaccines may be difficult to find, or require multiple doses spaced apart. A useful resource for more information about this is at <a href="https://wwwnc.cdc.gov/travel/page/travel-vaccines">CDC Travel Vaccines</a>.)</p>
-
-<p>If you need emergency medical assistance during your trip, dial 1669 (this may not work with non-Thai phone numbers) and ask for an ambulance. You should contact your insurance/medical assistance company promptly if you are referred to a medical facility for treatment.</p>
-
-<p>Medical care in Thailand is excellent. It is much cheaper than more developed countries, but a serious incident can incur substantial charges. You should have your own travel/health insurance before visiting Thailand.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Meetup</h2>
-  
-<p>On Tuesday 3rd October, before the conference, why not join our free informal meet-up at the Urban Office to meet and mingle with speakers and other attendees - <a href="https://www.meetup.com/bangkok-rb/events/293929593/">RSVP here</a>!</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Money</h2>
-  
-<p>Thailand uses the Thai baht as its currency, 38 THB is approximately 1 USD. Credit cards are widely accepted (Visa and Mastercard always work, JCB sometimes, Amex only occasionally). That said, taxis, street vendors, and some shops and restaurants will only accept cash, so we do recommend having some cash on you.</p>
-
-<p>When withdrawing money from an ATM, you will be charged a fixed fee of 220 baht, so it’s generally best to withdraw 5,000 THB or 10,000 THB at a time. (To USA residents: you can open an ATM-fee-free account online at <a href="https://www.schwab.com/public/schwab/banking_lending/checking_account">Charles Schwab</a>.)</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Official Party</h2>
-  
-<p>The official party is held on Friday evening at <a href="https://thedeckbkk.com/">The Deck</a>, which is 1 minutes walk from the conference venue! We’ll provide volunteers to help you make your way to the party from the hotel!</p>
-
-<p>The party is free for all attendees (simply wear your conference lanyard)!</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Plugs/Adaptors</h2>
-  
-<p>Thailand uses 220V AC and US-style plugs with two thin prongs. Before plugging in any devices check your adaptor will work with 220V. Many hotels have plugs which also accept European and UK style plugs.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Safety and Scams</h2>
-  
-<p>Bangkok is generally a safe place but like any large city you should keep your wits about you.</p>
-
-<ul>
-  <li>The roads in Bangkok and Thailand are very dangerous. Always wear a seatbelt and avoid using motorbike taxis.</li>
-  <li>Traffic drives on the left side of the road here, so be sure to look right when you cross the street. Also, it is not uncommon for motorbikes to ride in the wrong direction, so it’s best to look both ways!</li>
-  <li>Ignore touts at the airport, go straight to the public taxi queue.</li>
-  <li>If someone tries to sell you gems, it’s a scam.</li>
-  <li>If someone tells you a tourist attraction/hotel/restaurant is closed, and to come with them instead, it’s a scam.</li>
-  <li>Places recommended by your taxi/tuktuk driver could be scams or providing kickbacks to the driver. Do your own research online if you want to, for example, buy a suit or sample some of Bangkok’s nightlife.</li>
-  <li>Bangkok’s tap water is not safe to drink, so drink bottled water, even for brushing your teeth.</li>
-  <li>Bangkok can be very hot. Carry a bottle of water with you and stay hydrated.</li>
-  <li>In extreme situations, you may need or want to call the police. Thailand has “Tourist Police”, who can be contacted by dialing 1155 from a Thai phone number.</li>
-  <li>If you don’t intend to carry your passport around with you, it may be helpful to make a copy of the information page and carry it in your wallet. Most places that say they require a passport also accept a photocopy.</li>
-</ul>
-
-</section>
-
-<section class="section-text">
-  <h2>SIM Cards</h2>
-  
-<p>The three major cell service providers are True, AIS, and DTAC. SIM cards sold at the airport after you exit baggage claim are fairly priced and inexpensive, so you should just pick one up there, including phone calls and fast 4G data. In general True has the best signal coverage, but if you will just be in Bangkok it doesn’t matter much.</p>
-
-<p>You may need to modify your phone’s configuration to work in Thailand. We recommend installing the SIM card, and testing both a) phone calling or receiving and b) mobile Internet data access, before leaving the kiosk. Kiosk agents are usually happy to help with this.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Slack</h2>
-  
-<p>We have set up a Slack group so you can easily ask questions before and during the conference. <a href="https://join.slack.com/t/rubyconfth/shared_invite/enQtNzEwMTk1MjEyMjg4LTcyOTQwZjNjODE1ZTQzMzllNmY2NTMxOTM3NWI2Mzk0ZmJmNWE3MjdlYzBhOGQ1NDdjOWI4ZWYyZGJiYzU4YWU">Join here</a> .</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Transportation</h2>
-  
-<p>The <strong>Airport Rail Link</strong> (<a href="http://www.bangkok.com/airport-rail-link.htm">http://www.bangkok.com/airport-rail-link.htm</a> ) will easily get you from the airport to downtown.</p>
-
-<p>The <strong>BTS Skytrain</strong> is an elevated rapid transit/metro system. There are two lines, the Sukhumvit Line (light green) and Silom Line (dark green) which interchange at Siam station. You can buy tickets in cash at any station, or purchase a Rabbit card which allows preloading multiple journeys. You must show your passport to buy a Rabbit card.</p>
-
-<p>The <strong>MRT</strong> is an underground metro system, with two lines, the Blue Line and Purple Line, of which the Blue Line is the most convenient for tourists. You can buy tickets in cash at any station, or purchase a MRT card which allows preloading multiple journeys. The MRT and BTS have completely separate ticketing systems.</p>
-
-<p>You can use the free Explore Bangkok metro map app for <a href="https://apps.apple.com/th/app/explore-bangkok/id1076159526">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.exploremetro.bk&amp;hl=en">Android</a> for planning routes on the Airport Rail Link MRT and BTS, it works offline.</p>
-
-<p>Public <strong>buses</strong> are confusing for tourists and not recommended!</p>
-
-<p><strong>Taxis</strong> are cheap and plentiful, but sometimes it can be hard to find a taxi willing to take you to your destination, and taxi drivers rarely speak good English. Insist on using the meter. If the driver refuses, get out and find another taxi.</p>
-
-<p>Taxis often claim not to have change, so it’s best not to try to pay with a 1000THB bill. If necessary ask your hotel to break a bill, or pop into a 7-11 convenience store and buy something small like a bottle of water. The taxi will wait ;)</p>
-
-<p><strong>Motorbike taxis</strong> are a popular way for locals to get around but due to the poor road conditions in Bangkok, and the lack of passenger helmets, can be very dangerous. Stick to regular taxis which give you more protection if there’s an accident.</p>
-
-<p>“<strong>Tuktuks</strong>” are an iconic image of Bangkok, but really only used by tourists. If you want to ride one for fun, be sure to bargain the price with the driver as there are no meters. Some hotels have free tuktuks for their guests.</p>
-
-<p>As an alternative to hailing a taxi, you can use the <a href="https://www.grab.com/th/en/download/">Grab ride-hailing app</a>, which works similarly to apps like Uber or Lyft. The app works well in English, and you can type in your destination and see an instant price for your journey. It works best if you have mobile data (a Thai SIM card is probably best for this) so you can access the Internet anywhere. The app will show the license plate of your vehicle. Prices are typically slightly more expensive than a taxi. Actual arrival times are often longer than stated on the app. Grab is especially useful if you are not on a main road where taxis are likely to be plentiful. An alternative to Grab is <a href="https://bolt.eu/">Bolt</a> which is generally cheaper, though has fewer cars.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Tipping</h2>
-  
-<p>Tips will never be refused, but there’s not much of a tipping culture in Thailand.</p>
-
-<p>All restaurant bills will already have a 7% tax and 10% service charge included. <strong>You don’t need to tip on top of that</strong></p>
-
-<p>Coins are pretty low-value in Thailand, so it’s normal to just round up to the next 10/20THB bill and leave the coins when you receive change.</p>
-
-<p>You should tip someone who carries suitcases up to your room in a hotel.</p>
-
-</section>
-
-<section class="section-text">
-  <h2>Weather</h2>
-  
-<p>Bangkok is hot and wet (and the 2023 rainy season is especially wet!). In October, Bangkok has daily highs of around 32 Celsius (89F) and lows of 24 Celsius (75F), and you can expect sudden downpours of rain, especially in the afternoon. If you get caught in a storm, it’s generally best to just wait it out in a mall. It’s best to carry a small umbrella or raincoat (which you can also easily get at a convenience store).</p>
-
-<p><a href="https://www.bbc.com/weather/1609350">14 day forecast from the BBC</a></p>
-
-<p><img src="/images/practicalities/weather.png" alt="Weather in Bangkok" /></p>
-
-</section>
-
-      </div>
-    </main>
-
-    <div class="mailing-list">
-      <div class="container">
-        <h3>Join our mailing list</h3>
-        <p class="mailing-list__text">Sign up to receive updates about the event</p>
-        <form action="https://rubyconfth.us20.list-manage.com/subscribe/post?u=fd4a02525718b1d58ebaed6a0&id=4af9421776" method="post" class="form-mailing-list form" target="_blank">
-  <div class="form__group">
-    <input type="hidden" name="tags" value="3502539">
-    <input type="email" name="EMAIL" placeholder="Enter your email address" class="form__control form__control--lg" required />
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fd4a02525718b1d58ebaed6a0_4af9421776" tabindex="-1" value=""></div>
-  </div>
-  <button type="submit" class="form-mailing-list__btn btn btn--primary">I Love Ruby</button>
-</form>
-
-      </div>
-    </div>
-
-    <footer class="app-footer">
-  <section class="app-footer__social-platform">
+  <div class="mailing-list">
     <div class="container">
-      <h3>Follow us</h3>
-      <ul class="list-social-platform">
-  
-  <li class="list-social-platform__item">
-    <a href="https://facebook.com/rubyconfth" target="_blank" class="list-social-platform__link" title="Facebook">
-      
-      
-      <svg class="icon list-social-platform__icon list-social-platform__icon--facebook icon--xs" viewBox="0 0 32 32">
-  <use xlink:href="#icon-facebook"></use>
-</svg>
+      <h3>Join our mailing list</h3>
+      <p class="mailing-list__text">Sign up to receive updates about the event</p>
+      <form action="https://rubyconfth.us20.list-manage.com/subscribe/post?u=fd4a02525718b1d58ebaed6a0&id=4af9421776"
+        method="post" class="form-mailing-list form" target="_blank">
+        <div class="form__group">
+          <input type="hidden" name="tags" value="3502539">
+          <input type="email" name="EMAIL" placeholder="Enter your email address"
+            class="form__control form__control--lg" required />
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+              name="b_fd4a02525718b1d58ebaed6a0_4af9421776" tabindex="-1" value=""></div>
+        </div>
+        <button type="submit" class="form-mailing-list__btn btn btn--primary">I Love Ruby</button>
+      </form>
 
-      <span class="visually-hidden">Facebook</span>
-    </a>
-  </li>
-  
-  <li class="list-social-platform__item">
-    <a href="https://twitter.com/rubyconfth" target="_blank" class="list-social-platform__link" title="Twitter">
-      
-      
-      <svg class="icon list-social-platform__icon list-social-platform__icon--twitter icon--xs" viewBox="0 0 32 32">
-  <use xlink:href="#icon-twitter"></use>
-</svg>
-
-      <span class="visually-hidden">Twitter</span>
-    </a>
-  </li>
-  
-  <li class="list-social-platform__item">
-    <a href="https://instagram.com/rubyconfth" target="_blank" class="list-social-platform__link" title="Instagram">
-      
-      
-      <svg class="icon list-social-platform__icon list-social-platform__icon--instagram icon--xs" viewBox="0 0 32 32">
-  <use xlink:href="#icon-instagram"></use>
-</svg>
-
-      <span class="visually-hidden">Instagram</span>
-    </a>
-  </li>
-  
-  <li class="list-social-platform__item">
-    <a href="https://ruby.social/@rubyconfth" target="_blank" class="list-social-platform__link" title="Mastodon">
-      
-      
-      <svg class="icon list-social-platform__icon list-social-platform__icon--mastodon icon--xs" viewBox="0 0 32 32">
-  <use xlink:href="#icon-mastodon"></use>
-</svg>
-
-      <span class="visually-hidden">Mastodon</span>
-    </a>
-  </li>
-  
-  <li class="list-social-platform__item">
-    <a href="https://youtube.com/@rubyconfth" target="_blank" class="list-social-platform__link" title="Youtube">
-      
-      
-      <svg class="icon list-social-platform__icon list-social-platform__icon--youtube icon--xs" viewBox="0 0 32 32">
-  <use xlink:href="#icon-youtube"></use>
-</svg>
-
-      <span class="visually-hidden">Youtube</span>
-    </a>
-  </li>
-  
-</ul>
-
-    </div>
-  </section>
-
-  <div class="app-footer__footnote">
-    <div class="container">
-      <div class="app-footer__legal">
-        &copy; <a href="https://bangkokrb.org/" title="Ruby Community organizer">Bangkok.rb</a>
-      </div>
-      <div class="app-footer__community">
-        Built with <a href="https://www.ruby-lang.org/en/">Ruby</a> & <a href="https://www.bridgetownrb.com/">Bridgetown</a>
-      </div>
-      <div class="app-footer__link">
-        Past events: <a href="/past/2022/">2022</a> - <a href="/past/2019/">2019</a>
-      </div>
     </div>
   </div>
-</footer>
 
-  </body>
+  <footer class="app-footer">
+    <section class="app-footer__social-platform">
+      <div class="container">
+        <h3>Follow us</h3>
+        <ul class="list-social-platform">
+
+          <li class="list-social-platform__item">
+            <a href="https://facebook.com/rubyconfth" target="_blank" class="list-social-platform__link"
+              title="Facebook">
+
+
+              <svg class="icon list-social-platform__icon list-social-platform__icon--facebook icon--xs"
+                viewBox="0 0 32 32">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+
+          <li class="list-social-platform__item">
+            <a href="https://twitter.com/rubyconfth" target="_blank" class="list-social-platform__link" title="Twitter">
+
+
+              <svg class="icon list-social-platform__icon list-social-platform__icon--twitter icon--xs"
+                viewBox="0 0 32 32">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+
+          <li class="list-social-platform__item">
+            <a href="https://instagram.com/rubyconfth" target="_blank" class="list-social-platform__link"
+              title="Instagram">
+
+
+              <svg class="icon list-social-platform__icon list-social-platform__icon--instagram icon--xs"
+                viewBox="0 0 32 32">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+
+          <li class="list-social-platform__item">
+            <a href="https://ruby.social/@rubyconfth" target="_blank" class="list-social-platform__link"
+              title="Mastodon">
+
+
+              <svg class="icon list-social-platform__icon list-social-platform__icon--mastodon icon--xs"
+                viewBox="0 0 32 32">
+                <use xlink:href="#icon-mastodon"></use>
+              </svg>
+
+              <span class="visually-hidden">Mastodon</span>
+            </a>
+          </li>
+
+          <li class="list-social-platform__item">
+            <a href="https://youtube.com/@rubyconfth" target="_blank" class="list-social-platform__link"
+              title="Youtube">
+
+
+              <svg class="icon list-social-platform__icon list-social-platform__icon--youtube icon--xs"
+                viewBox="0 0 32 32">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <div class="app-footer__footnote">
+      <div class="container">
+        <div class="app-footer__legal">
+          &copy; <a href="https://bangkokrb.org/" title="Ruby Community organizer">Bangkok.rb</a>
+        </div>
+        <div class="app-footer__community">
+          Built with <a href="https://www.ruby-lang.org/en/">Ruby</a> & <a
+            href="https://www.bridgetownrb.com/">Bridgetown</a>
+        </div>
+        <div class="app-footer__link">
+          Past events: <a href="../past/2022/">2022</a> - <a href="../past/2019/">2019</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
